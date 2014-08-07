@@ -1,0 +1,13 @@
+<h1>Export #<%= @export.id %></h1>
+
+<div>
+  <strong>Materials</strong>:<br />
+  <p><%= @export.materials %></p>
+</div>
+<div>
+  <strong>Exports from</strong>:<br />
+  <p><%= @export.exports_from %></p>
+</div>
+
+<a href="/exports/<%= @export.id %>/edit">Edit</a> |
+<a href="/exports/<%= @export.id %>/destroy">Destroy</a>

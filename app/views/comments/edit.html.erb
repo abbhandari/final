@@ -1,0 +1,13 @@
+<h1>Editing Comment #<%= @comment.id %></h1>
+
+<form action="/comments/<%= @comment.id %>/update">
+  <div>
+    <label for="content">content</label><br />
+    <input id="content" name="content" value="<%= @comment.content  %>" type="text" />
+  </div>
+  <div>
+    <input type="submit">
+  </div>
+</form>
+
+

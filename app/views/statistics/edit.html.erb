@@ -1,0 +1,13 @@
+<h1>Editing Statistic #<%= @statistic.id %></h1>
+
+<form action="/statistics/<%= @statistic.id %>/update">
+  <div>
+    <label for="data">data</label><br />
+    <input id="data" name="data" value="<%= @statistic.data  %>" type="text" />
+  </div>
+  <div>
+    <input type="submit">
+  </div>
+</form>
+
+

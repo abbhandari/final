@@ -1,0 +1,53 @@
+<h1>Editing Country #<%= @country.id %></h1>
+
+<form action="/countries/<%= @country.id %>/update">
+  <div>
+    <label for="title">title</label><br />
+    <input id="title" name="title" value="<%= @country.title  %>" type="text" />
+  </div>
+  <div>
+    <label for="image">image</label><br />
+    <input id="image" name="image" value="<%= @country.image  %>" type="text" />
+  </div>
+  <div>
+    <label for="gdp">GDP</label><br />
+    <input id="gdp" name="gdp" type="gdp" value="<%= @country.gdp  %>"/>
+  </div>
+  <div>
+    <label for="unemployment_rate">Unemployment Rate</label><br />
+    <input id="unemployment_rate" name="unemployment_rate" type="unemployment_rate"  value="<%= @country.unemployment_rate %>"/>
+  </div>
+  <div>
+    <label for="literacy_rate">Literacy Rate</label><br />
+    <input id="literacy_rate" name="literacy_rate" type="literacy_rate" value="<%= @country.literacy_rate %>"/>
+  </div>
+  <div>
+    <label for="minimum_wage">Minimum Wage</label><br />
+    <input id="minimum_wage" name="minimum_wage" type="minimum_wage" value="<%= @country.minimum_wage %>" />
+  </div>
+  <div>
+    <label for="average_age">Average Age</label><br />
+    <input id="average_age" name="average_age" type="average_age" value="<%= @country.average_age %>" />
+  </div>
+  <div>
+    <label for="average_income">Average Income</label><br />
+    <input id="average_income" name="average_income" type="average_income" value="<%= @country.average_income %>"/>
+  </div>
+  <div>
+    <label for="government_type">Government Type</label><br />
+    <input id="government_type" name="government_type" type="government_type" value="<%= @country.government_type %>" />
+  </div>
+  <div>
+    <label for="head_of_state">Head of State</label><br />
+    <input id="head_of_state" name="head_of_state" type="head_of_state" value="<%= @country.head_of_state %>" />
+  </div>
+   <div>
+    <label for="debt">Debt</label><br />
+    <input id="debt" name="debt" type="debt" value="<%= @country.debt%>" />
+  </div>
+  <div>
+    <input type="submit">
+  </div>
+</form>
+
+

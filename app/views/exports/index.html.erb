@@ -1,0 +1,29 @@
+<h1>Exports</h1>
+
+<p><a href="/new_export">Add a New Export</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Materials</th>
+      <th>Exports from</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @exports.each do |export| %>
+    <tr>
+          <td><%= export.materials %></td>
+          <td><%= export.exports_from %></td>
+          <td><a href="/exports/<%= export.id %>">Show</a>
+        </td>
+      <td><a href="/exports/<%= export.id %>/edit">Edit</a></td>
+      <td><a href="/exports/<%= export.id %>/destroy">Destroy</a></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+

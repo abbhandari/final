@@ -1,0 +1,17 @@
+<h1>Editing Import #<%= @import.id %></h1>
+
+<form action="/imports/<%= @import.id %>/update">
+  <div>
+    <label for="materials">materials</label><br />
+    <input id="materials" name="materials" value="<%= @import.materials  %>" type="text" />
+  </div>
+  <div>
+    <label for="imports_from">imports_from</label><br />
+    <input id="imports_from" name="imports_from" value="<%= @import.imports_from  %>" type="text" />
+  </div>
+  <div>
+    <input type="submit">
+  </div>
+</form>
+
+

@@ -1,0 +1,13 @@
+<h1>Import #<%= @import.id %></h1>
+
+<div>
+  <strong>Materials</strong>:<br />
+  <p><%= @import.materials %></p>
+</div>
+<div>
+  <strong>Imports from</strong>:<br />
+  <p><%= @import.imports_from %></p>
+</div>
+
+<a href="/imports/<%= @import.id %>/edit">Edit</a> |
+<a href="/imports/<%= @import.id %>/destroy">Destroy</a>

@@ -1,0 +1,29 @@
+<h1>Imports</h1>
+
+<p><a href="/new_import">Add a New Import</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Materials</th>
+      <th>Imports from</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @imports.each do |import| %>
+    <tr>
+          <td><%= import.materials %></td>
+          <td><%= import.imports_from %></td>
+          <td><a href="/imports/<%= import.id %>">Show</a>
+        </td>
+      <td><a href="/imports/<%= import.id %>/edit">Edit</a></td>
+      <td><a href="/imports/<%= import.id %>/destroy">Destroy</a></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+

@@ -1,0 +1,27 @@
+<h1>Statistics</h1>
+
+<p><a href="/new_statistic">Add a New Statistic</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @statistics.each do |statistic| %>
+    <tr>
+          <td><%= statistic.data %></td>
+          <td><a href="/statistics/<%= statistic.id %>">Show</a>
+        </td>
+      <td><a href="/statistics/<%= statistic.id %>/edit">Edit</a></td>
+      <td><a href="/statistics/<%= statistic.id %>/destroy">Destroy</a></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+

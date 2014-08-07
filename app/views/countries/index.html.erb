@@ -1,0 +1,29 @@
+<h1>Countries</h1>
+
+<p><a href="/new_country">Add a New Country</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Image</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @countries.each do |country| %>
+    <tr>
+          <td><%= country.title %></td>
+          <td><%= country.image %></td>
+          <td><a href="/countries/<%= country.id %>">Show</a>
+        </td>
+      <td><a href="/countries/<%= country.id %>/edit">Edit</a></td>
+      <td><a href="/countries/<%= country.id %>/destroy">Destroy</a></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
