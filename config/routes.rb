@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root to: 'application#home'
   get '/sessions/new' => 'sessions#new'
   get '/sessions/create' => 'sessions#create'
   get '/sessions/sign_out' => 'sessions#destroy'
