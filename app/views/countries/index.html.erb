@@ -6,7 +6,7 @@
   <thead>
     <tr>
       <th>Title</th>
-      <th>Image</th>
+    
       <th></th>
       <th></th>
       <th></th>
@@ -17,11 +17,15 @@
   <% @countries.each do |country| %>
     <tr>
           <td><%= country.title %></td>
-          <td><%= country.image %></td>
+              <% if session['uid'] %>
+        <td><a href="/users/<%= user.id %>">Image</a></td>
+      <% end %>
           <td><a href="/countries/<%= country.id %>">Show</a>
         </td>
-      <td><a href="/countries/<%= country.id %>/edit">Edit</a></td>
-      <td><a href="/countries/<%= country.id %>/destroy">Destroy</a></td>
+         <% if session['uid'] %>
+        <td><a href="/users/<%= user.id %>/edit">Edit</a></td>
+        <td><a href="/users/<%= user.id %>/destroy">Destroy</a></td>
+      <% end %>
     </tr>
   <% end %>
   </tbody>

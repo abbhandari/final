@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_filter :login_required, :except => [:index, :new, :create]
+  #before_filter :login_required, :except => [:index, :new, :create]
 
   def index
     @users = User.all
@@ -22,7 +22,7 @@ class UsersController < ApplicationController
     if @user.save
       redirect_to "/users/#{ @user.id }"
     else
-      render 'new'
+      redirect_to '/error'
     end
   end
 

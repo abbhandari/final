@@ -105,5 +105,5 @@ Rails.application.routes.draw do
   #------------------------------
 
   get '/home' => 'application#home'
-  get 'show' => 'application#show'
+  get '/show' => 'application#show'
 end
