@@ -23,6 +23,13 @@ Things you may want to cover:
 
 * ...
 
+An app that compares the American economy to other nations.
+
+1. Student has class assignment and decides to look at the US GDP compared to France . He clicks on France and sees the difference and writes his report on it.
+
+2. Diplomat prepares speech on why third world countries need aid from US. He decides to compare the unemployment rate of the US versus Somalia to prove his point.
+
+3. A teacher wants to show her class why America is a great place to live so he shows the average yearly income between the US and Uganda.
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
